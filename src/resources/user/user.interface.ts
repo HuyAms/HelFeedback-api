@@ -14,11 +14,6 @@ interface Passport {
 	resetTokenExp?: number
 
 	tokenId?: string
-	googleId?: string
-}
-
-export enum OathProvider {
-	Google = 'google',
 }
 
 export enum UserStatus {
