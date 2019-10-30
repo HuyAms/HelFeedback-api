@@ -10,6 +10,7 @@ import apiError, {ErrorCode} from '../utils/apiError'
 export enum Permission {
 	UserRead = 'user:read',
 	UserWrite = 'user:write',
+	ChannelWrite = 'channel:write',
 }
 
 type PermissionRole = {[key in UserRole]: Permission[]}

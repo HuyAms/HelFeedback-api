@@ -14,6 +14,8 @@ import userRouter from './resources/user/user.router'
 import authRouter from './resources/auth/auth.router'
 import createLogger from './utils/logger'
 
+import channelRouter from './resources/channel/channel.router'
+
 const logger = createLogger(module)
 
 export const app = express()
@@ -50,6 +52,8 @@ if (config.seed) {
 app.use('/auth', authRouter)
 
 app.use('/api/users', userRouter)
+
+app.use('/api/channels', channelRouter)
 
 app.use('/api-docs', swagger)
 
