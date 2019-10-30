@@ -16,16 +16,20 @@ A boileplate for REST API focuses on separation of concerns and scalability
 ## Features
 
 ---
+
 ## **📂 Separation of concerns & multilayer structure**
+
 - _Router_, _Middleware_, _Controller_ and _Service_.
 - _API response_ and _Error handling_.
 
 ## **🚀 Rapid development workflow**
+
 - _**[Nodemon](https://www.npmjs.com/package/nodemon)**_
 - _**[Winston](https://github.com/winstonjs/winston)**_
 - _**[Babel](https://babeljs.io/)**_
 
 ## **⚔️ Type checking**
+
 - _**[TypeScript](https://www.typescriptlang.org/docs/tutorial.html)**_
 
 ## **🛡 Testing**
@@ -34,6 +38,7 @@ A boileplate for REST API focuses on separation of concerns and scalability
 - _**[Supertest](https://github.com/visionmedia/supertest)**_
 
 ## **🔐 Authentication and authorisation**
+
 - _**[JSON Web Token - JWT](https://github.com/auth0/node-jsonwebtoken)**_
 - _**[Passport local strategy](http://www.passportjs.org/packages/passport-local/)**_
 - _**[Passport Google Strategy](http://www.passportjs.org/packages/passport-google-oauth/)**_
@@ -43,22 +48,25 @@ A boileplate for REST API focuses on separation of concerns and scalability
 - _**Multi-role authorisation**_
 
 ## **📝 API documentation**
+
 - _**[Swagger](https://swagger.io/)**_
 
 ![swagger](docs/images/swagger.png 'Swagger documentation')
 
 ## **🗄 Database integration**
+
 - _**[MongoDB](https://www.mongodb.com/)**_
 - _**[Mongoose](https://mongoosejs.com/)**_
 - _**CRUD users**_
 - _**Searching, sorting and pagination**_
 
-
 ## **🚓 Security**
+
 - _**[HelmetJS](https://helmetjs.github.io/)**_
 - _**[Express Rate Limit](https://github.com/nfriedly/express-rate-limit)**_
 
 ## **💎 Rich utilities: Git hooks and code formatting**
+
 - _**[Prettier](https://github.com/prettier/prettier)**_
 - _**[Husky](https://github.com/typicode/husky/)**_
 - _**[Lint-staged](https://github.com/okonet/lint-staged/)**_
@@ -69,7 +77,9 @@ A boileplate for REST API focuses on separation of concerns and scalability
 - _**[TravisCI](https://travis-ci.org/)**_
 
 ## **🏆 Test coverage**
+
 ![test coverage](docs/images/test_coverage.svg 'Test coverage')
+
 ## Prerequisites
 
 ---
