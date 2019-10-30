@@ -1,7 +1,9 @@
 import {UserRole, UserStatus, User} from '../../resources/user/user.interface'
 import UserModel, {UserDocument} from '../../resources/user/user.model'
 import {createMockChannel, createMockUser} from './mock'
-import ChannelModel, {ChannelDocument} from '../../resources/channel/channel.model'
+import ChannelModel, {
+	ChannelDocument,
+} from '../../resources/channel/channel.model'
 import {Channel} from '../../resources/channel/channel.interface'
 
 export const addUser = (user: User): Promise<UserDocument> => {
