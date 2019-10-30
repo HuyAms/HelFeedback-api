@@ -24,7 +24,7 @@ export const createMockUser = (
 	status,
 })
 
-export const createMockChannel = (name: string): Channel => ({
-	name: faker.lorem.word(),
+export const createMockChannel = (name?: string): Channel => ({
+	name: name || faker.lorem.word(),
 	lastFeedback: new Date(),
 })
