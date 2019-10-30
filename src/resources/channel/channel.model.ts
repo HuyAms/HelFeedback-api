@@ -14,6 +14,7 @@ const channelSchema = new mongoose.Schema(
 		lastFeedback: {
 			type: Date,
 			required: true,
+			default: Date.now(),
 		},
 	},
 	{timestamps: true},
