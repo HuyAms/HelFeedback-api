@@ -1,10 +1,14 @@
 import {UserRole, UserStatus, User} from '../../resources/user/user.interface'
 import UserModel, {UserDocument} from '../../resources/user/user.model'
-import {createMockChannel, createMockUser} from './mock'
+import {createMockCategory, createMockChannel, createMockUser} from './mock'
 import ChannelModel, {
 	ChannelDocument,
 } from '../../resources/channel/channel.model'
 import {Channel} from '../../resources/channel/channel.interface'
+import {Category} from '../../resources/category/category.interface'
+import CategoryModel, {
+	CategoryDocument,
+} from '../../resources/category/category.model'
 
 export const addUser = (user: User): Promise<UserDocument> => {
 	const mockUser = user || createMockUser(UserRole.User, UserStatus.Active)
@@ -19,4 +23,10 @@ export const addChannel = (channel: Channel): Promise<ChannelDocument> => {
 	const mockChannel = channel || createMockChannel()
 
 	return ChannelModel.create(mockChannel)
+}
+
+export const addCategory = (category: Category): Promise<CategoryDocument> => {
+	const mockCategory = category || createMockCategory()
+
+	return CategoryModel.create(mockCategory)
 }

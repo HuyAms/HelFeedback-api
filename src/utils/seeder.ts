@@ -2,9 +2,10 @@ import {User, UserRole, UserStatus} from '../resources/user/user.interface'
 import _ from 'lodash'
 import UserModel from '../resources/user/user.model'
 import createLogger from '../utils/logger'
-import {createMockChannel} from '../tests/utils/mock'
-import {addChannel} from '../tests/utils/db'
+import {createMockCategory, createMockChannel} from '../tests/utils/mock'
+import {addCategory, addChannel} from '../tests/utils/db'
 import ChannelModel from '../resources/channel/channel.model'
+import CategoryModel from '../resources/category/category.model'
 
 const logger = createLogger(module)
 
@@ -33,7 +34,11 @@ const mockUser2: User = {
 const mockUsers = [mockUser1, mockUser2]
 
 const cleanDB = () => {
-	return Promise.all([UserModel.deleteMany({}), ChannelModel.deleteMany({})])
+	return Promise.all([
+		UserModel.deleteMany({}),
+		ChannelModel.deleteMany({}),
+		CategoryModel.deleteMany({}),
+	])
 }
 
 const createUsers = () => {
@@ -46,6 +51,12 @@ const createChannels = () => {
 	return mockChannels.map(mockChannel => addChannel(mockChannel))
 }
 
+const createCategories = () => {
+	const mockCategories = _.times(4, () => createMockCategory())
+
+	return mockCategories.map(mockCategories => addCategory(mockCategories))
+}
+
 export const seed = async () => {
 	try {
 		await cleanDB()
@@ -54,6 +65,7 @@ export const seed = async () => {
 
 		await Promise.all(createUsers())
 		await Promise.all(createChannels())
+		await Promise.all(createCategories())
 
 		logger.debug(`Database seeded`)
 	} catch (e) {

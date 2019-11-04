@@ -15,6 +15,7 @@ import authRouter from './resources/auth/auth.router'
 import createLogger from './utils/logger'
 
 import channelRouter from './resources/channel/channel.router'
+import categoryRouter from './resources/category/category.router'
 
 const logger = createLogger(module)
 
@@ -54,6 +55,7 @@ app.use('/auth', authRouter)
 app.use('/api/users', userRouter)
 
 app.use('/api/channels', channelRouter)
+app.use('/api/categories', categoryRouter)
 
 app.use('/api-docs', swagger)
 
