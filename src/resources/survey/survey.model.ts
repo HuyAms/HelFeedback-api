@@ -1,5 +1,6 @@
 import mongoose, {Document} from 'mongoose'
 import {Survey} from './survey.interface'
+import uuidv4 from 'uuid/v4'
 
 export interface SurveyDocument extends Document, Survey {}
 
@@ -11,11 +12,7 @@ const surveySchema = new mongoose.Schema(
 			unique: true,
 			trim: true,
 		},
-		description: {
-			type: Date,
-			required: true,
-			default: Date.now(),
-		},
+		description: String,
 		questions: [
 			{
 				heading: {
@@ -29,7 +26,11 @@ const surveySchema = new mongoose.Schema(
 				},
 				choices: [
 					{
-						id: String,
+						id: {
+							type: String,
+							required: true,
+							default: uuidv4(),
+						},
 						value: String,
 						imageUrl: String,
 					},

@@ -1,7 +1,7 @@
 export interface Question {
 	heading: string
 	subtitle?: string
-	categoryId: string
+	categoryId?: string
 	choices: Choice[]
 }
 
