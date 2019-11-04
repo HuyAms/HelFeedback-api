@@ -11,7 +11,7 @@ export const parseChannelIdParams = async (
 	const channel = await ChannelModel.findById(id).exec()
 
 	if (!channel) {
-		throw notFound('Cannot find team with that id')
+		throw notFound('Cannot find channel with that id')
 	}
 
 	return channel

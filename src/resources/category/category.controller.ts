@@ -2,14 +2,9 @@ import {RequestHandler, RequestParamHandler} from 'express'
 import * as services from './category.service'
 import {successResponse} from '../../utils/apiResponse'
 
-export const parseChannelIdParam: RequestParamHandler = (
-	req,
-	res,
-	next,
-	id,
-) => {
+export const parseCategoryId: RequestParamHandler = (req, res, next, id) => {
 	services
-		.parseChannelIdParams(id)
+		.parseCategoryId(id)
 		.then(category => {
 			req.category = category
 			return next()
@@ -20,12 +15,12 @@ export const parseChannelIdParam: RequestParamHandler = (
 export const getCategories: RequestHandler = (req, res, next) => {
 	services
 		.getCategories()
-		.then(channel => res.json(successResponse(channel)))
+		.then(category => res.json(successResponse(category)))
 		.catch(next)
 }
 
-export const getChannel: RequestHandler = (req, res, next) => {
-	return res.json(successResponse(req.channel))
+export const getCategory: RequestHandler = (req, res, next) => {
+	return res.json(successResponse(req.category))
 }
 
 export const createChannel: RequestHandler = (req, res, next) => {
@@ -37,14 +32,14 @@ export const createChannel: RequestHandler = (req, res, next) => {
 
 export const updateChannel: RequestHandler = (req, res, next) => {
 	return services
-		.updateCategory(req.channel.id, req.body)
+		.updateCategory(req.category.id, req.body)
 		.then(category => res.json(successResponse(category)))
 		.catch(next)
 }
 
 export const deleteChannel: RequestHandler = (req, res, next) => {
 	return services
-		.deleteCategory(req.channel.id)
+		.deleteCategory(req.category.id)
 		.then(category => res.json(successResponse(category)))
 		.catch(next)
 }

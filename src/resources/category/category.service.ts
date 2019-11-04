@@ -5,13 +5,13 @@ import {notFound} from '../../utils/apiError'
 
 const logger = createLogger(module)
 
-export const parseChannelIdParams = async (
+export const parseCategoryId = async (
 	id: string,
 ): Promise<CategoryDocument> => {
 	const channel = await CategoryModel.findById(id).exec()
 
 	if (!channel) {
-		throw notFound('Cannot find team with that id')
+		throw notFound('Cannot find category with that id')
 	}
 
 	return channel
