@@ -5,7 +5,6 @@ const config = {
 	loggerLevel: 'error',
 	secrets: {
 		jwt: 'jwttest',
-		googleClientId: 'dummyGoogleClientId',
 		googleClientSecret: 'dummyGoogleClientSecret',
 	},
 	mailSender: 'test<noreply@test.com>',

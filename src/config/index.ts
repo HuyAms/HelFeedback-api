@@ -21,9 +21,6 @@ const baseConfig = {
 		resetTokenExp: process.env.RESET_TOKEN_EXP || 3600000, // 1 hour
 
 		sendGridApiKey: process.env.SENDGRID_API_KEY,
-
-		googleClientId: process.env.GOOGLE_CLIENT_ID,
-		googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
 	},
 	requestLimiter: {
 		timeLimit: 15 * 60 * 1000, // 15 minutes
