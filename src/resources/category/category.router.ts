@@ -8,9 +8,9 @@ import {
 
 const router = Router()
 
-const channelWrite = protect([Permission.ChannelWrite])
+const categoryWrite = protect([Permission.CategoryWrite])
 
-router.param('id', controller.parseChannelIdParam)
+router.param('id', controller.parseCategoryId)
 
 router
 	.route('/')
@@ -19,8 +19,8 @@ router
 
 router
 	.route('/:id')
-	.get(controller.getChannel)
-	.put(channelWrite, validateUpdateCategory, controller.updateChannel)
-	.delete(channelWrite, controller.deleteChannel)
+	.get(controller.getCategory)
+	.put(categoryWrite, validateUpdateCategory, controller.updateChannel)
+	.delete(categoryWrite, controller.deleteChannel)
 
 export default router

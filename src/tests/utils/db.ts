@@ -9,6 +9,8 @@ import {Category} from '../../resources/category/category.interface'
 import CategoryModel, {
 	CategoryDocument,
 } from '../../resources/category/category.model'
+import SurveyModel, {SurveyDocument} from '../../resources/survey/survey.model'
+import {Survey} from '../../resources/survey/survey.interface'
 
 export const addUser = (user: User): Promise<UserDocument> => {
 	const mockUser = user || createMockUser(UserRole.User, UserStatus.Active)
@@ -29,4 +31,8 @@ export const addCategory = (category: Category): Promise<CategoryDocument> => {
 	const mockCategory = category || createMockCategory()
 
 	return CategoryModel.create(mockCategory)
+}
+
+export const addSurvey = (survey: Survey): Promise<SurveyDocument> => {
+	return SurveyModel.create(survey)
 }

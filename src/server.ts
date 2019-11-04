@@ -16,6 +16,7 @@ import createLogger from './utils/logger'
 
 import channelRouter from './resources/channel/channel.router'
 import categoryRouter from './resources/category/category.router'
+import surveyRouter from './resources/survey/survey.router'
 
 const logger = createLogger(module)
 
@@ -56,6 +57,7 @@ app.use('/api/users', userRouter)
 
 app.use('/api/channels', channelRouter)
 app.use('/api/categories', categoryRouter)
+app.use('/api/surveys', surveyRouter)
 
 app.use('/api-docs', swagger)
 

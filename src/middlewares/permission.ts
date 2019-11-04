@@ -11,6 +11,8 @@ export enum Permission {
 	UserRead = 'user:read',
 	UserWrite = 'user:write',
 	ChannelWrite = 'channel:write',
+	SurveyWrite = 'survey:write',
+	CategoryWrite = 'category:write',
 }
 
 type PermissionRole = {[key in UserRole]: Permission[]}
