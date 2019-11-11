@@ -10,7 +10,7 @@ router.param('id', controller.parseSurveyIdParam)
 
 router
 	.route('/')
-	.get(controller.getSurvey)
+	.get(controller.getSurveys)
 	.post(controller.createSurvey)
 
 router

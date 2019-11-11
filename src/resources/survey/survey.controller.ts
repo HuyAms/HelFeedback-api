@@ -12,9 +12,9 @@ export const parseSurveyIdParam: RequestParamHandler = (req, res, next, id) => {
 		.catch(next)
 }
 
-export const getChannels: RequestHandler = (req, res, next) => {
+export const getSurveys: RequestHandler = (req, res, next) => {
 	services
-		.getSurveys()
+		.getSurveys(req.query.name)
 		.then(surveys => res.json(successResponse(surveys)))
 		.catch(next)
 }

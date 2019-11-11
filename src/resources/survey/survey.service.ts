@@ -17,8 +17,13 @@ export const parseSurveyParams = async (
 	return survey
 }
 
-export const getSurveys = (): Promise<SurveyDocument[]> => {
+export const getSurveys = (name: string): Promise<SurveyDocument[]> => {
 	logger.debug('Get surveys')
+
+	if (name) {
+		return SurveyModel.find({name}).exec()
+	}
+
 	return SurveyModel.find().exec()
 }
 
