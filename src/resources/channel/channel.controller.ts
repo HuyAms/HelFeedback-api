@@ -2,14 +2,14 @@ import {RequestHandler, RequestParamHandler} from 'express'
 import * as services from './channel.service'
 import {successResponse} from '../../utils/apiResponse'
 
-export const parseChannelIdParam: RequestParamHandler = (
+export const parseChannelNameParam: RequestParamHandler = (
 	req,
 	res,
 	next,
-	id,
+	name,
 ) => {
 	services
-		.parseChannelIdParams(id)
+		.parseChannelNameParam(name)
 		.then(channel => {
 			req.channel = channel
 			return next()

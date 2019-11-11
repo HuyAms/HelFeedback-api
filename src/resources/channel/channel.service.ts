@@ -5,13 +5,13 @@ import {notFound} from '../../utils/apiError'
 
 const logger = createLogger(module)
 
-export const parseChannelIdParams = async (
-	id: string,
+export const parseChannelNameParam = async (
+	name: string,
 ): Promise<ChannelDocument> => {
-	const channel = await ChannelModel.findById(id).exec()
+	const channel = await ChannelModel.findOne({name}).exec()
 
 	if (!channel) {
-		throw notFound('Cannot find channel with that id')
+		throw notFound('Cannot find channel with that name')
 	}
 
 	return channel

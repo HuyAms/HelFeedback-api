@@ -7,7 +7,7 @@ const router = Router()
 
 const channelWrite = protect([Permission.ChannelWrite])
 
-router.param('id', controller.parseChannelIdParam)
+router.param('name', controller.parseChannelNameParam)
 
 router
 	.route('/')
@@ -15,7 +15,7 @@ router
 	.post(validateCreateChannel, controller.createChannel)
 
 router
-	.route('/:id')
+	.route('/:name')
 	.get(controller.getChannel)
 	.put(channelWrite, validateUpdateChannel, controller.updateChannel)
 	.delete(channelWrite, controller.deleteChannel)
