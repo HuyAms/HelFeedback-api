@@ -52,8 +52,8 @@ const createUsers = () => {
 	return mockUsers.map(mockUser => UserModel.create(mockUser))
 }
 
-const createChannels = () => {
-	const mockChannels = _.times(4, () => createMockChannel())
+const createChannels = (surveyId: string) => {
+	const mockChannels = _.times(4, () => createMockChannel(surveyId))
 
 	return mockChannels.map(mockChannel => addChannel(mockChannel))
 }
@@ -78,12 +78,12 @@ export const seed = async () => {
 		logger.debug(`Database cleaned`)
 
 		await Promise.all(createUsers())
-		await Promise.all(createChannels())
 		const categories = await Promise.all(createCategories())
 
 		const categoryId = categories[0].id
 
-		await createSurveys(categoryId)
+		const createdSurvey = await createSurveys(categoryId)
+		await Promise.all(createChannels(createdSurvey.id))
 
 		logger.debug(`Database seeded`)
 	} catch (e) {

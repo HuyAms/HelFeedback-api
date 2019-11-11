@@ -16,6 +16,10 @@ const channelSchema = new mongoose.Schema(
 			required: true,
 			default: Date.now(),
 		},
+		activeSurveyId: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: 'survey',
+		},
 	},
 	{timestamps: true},
 )
