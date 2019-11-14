@@ -12,13 +12,10 @@ import {seed} from './utils/seeder'
 
 import userRouter from './resources/user/user.router'
 import authRouter from './resources/auth/auth.router'
-import createLogger from './utils/logger'
 
 import channelRouter from './resources/channel/channel.router'
 import categoryRouter from './resources/category/category.router'
 import surveyRouter from './resources/survey/survey.router'
-
-const logger = createLogger(module)
 
 export const app = express()
 
@@ -27,7 +24,7 @@ export const app = express()
  */
 
 if (config.isDev && dotEnvResult.error) {
-	logger.error('Please create .env file at root folder')
+	console.log('Please create .env file at root folder')
 }
 
 app.use(middlewares)
