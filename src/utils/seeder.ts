@@ -59,13 +59,16 @@ const createChannels = (surveyId: string) => {
 }
 
 const createCategories = () => {
-	const mockCategories = _.times(4, () => createMockCategory())
+	const mockCategories = _.times(6, () => createMockCategory())
 
 	return mockCategories.map(mockCategories => addCategory(mockCategories))
 }
 
 const createSurveys = (categoryIds: string[]) => {
-	const questions = _.times(2, index => createMockQuestion(categoryIds[index]))
+	const questions = categoryIds.map(categoryId =>
+		createMockQuestion(categoryId),
+	)
+
 	const mockSurvey = createMockSurvey(questions)
 
 	return addSurvey(mockSurvey)
