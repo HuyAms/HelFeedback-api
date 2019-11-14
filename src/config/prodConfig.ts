@@ -1,5 +1,5 @@
 const config = {
-	seed: false,
+	seed: process.env.SEED,
 	loggerLevel: process.env.LOGGER_LEVEL || 'info',
 }
 
