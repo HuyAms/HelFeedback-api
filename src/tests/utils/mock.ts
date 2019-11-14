@@ -34,6 +34,11 @@ export const createMockCategory = (name?: string): Category => ({
 	description: faker.lorem.words(),
 	imageUrl:
 		'https://user-images.githubusercontent.com/17778976/68159361-4cac2380-ff5a-11e9-8529-0e0721d7bdb3.png',
+	instruction: {
+		text: faker.lorem.words(),
+		imageUrl:
+			'https://user-images.githubusercontent.com/17778976/68159361-4cac2380-ff5a-11e9-8529-0e0721d7bdb3.png',
+	},
 })
 
 export const createMockSurvey = (questions: Question[]): Survey => ({
