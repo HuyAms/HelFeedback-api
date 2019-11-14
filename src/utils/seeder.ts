@@ -64,8 +64,8 @@ const createCategories = () => {
 	return mockCategories.map(mockCategories => addCategory(mockCategories))
 }
 
-const createSurveys = (categoryId: string) => {
-	const questions = _.times(4, () => createMockQuestion(categoryId))
+const createSurveys = (categoryIds: string[]) => {
+	const questions = _.times(2, index => createMockQuestion(categoryIds[index]))
 	const mockSurvey = createMockSurvey(questions)
 
 	return addSurvey(mockSurvey)
@@ -80,9 +80,9 @@ export const seed = async () => {
 		await Promise.all(createUsers())
 		const categories = await Promise.all(createCategories())
 
-		const categoryId = categories[0].id
+		const categoryIds = categories.map(category => category.id)
 
-		const createdSurvey = await createSurveys(categoryId)
+		const createdSurvey = await createSurveys(categoryIds)
 		await Promise.all(createChannels(createdSurvey.id))
 
 		logger.debug(`Database seeded`)
