@@ -27,6 +27,16 @@ export const getSurveys = (name: string): Promise<SurveyDocument[]> => {
 	return SurveyModel.find().exec()
 }
 
+export const getSurvey = (id: string): Promise<SurveyDocument> => {
+	const survey = SurveyModel.findById(id).exec()
+
+	if (!survey) {
+		throw notFound('Cannot find survey with that id')
+	}
+
+	return survey
+}
+
 export const deleteSurvey = (id: string): Promise<SurveyDocument> => {
 	logger.debug('Delete survey: ', id)
 	return SurveyModel.findByIdAndDelete().exec()

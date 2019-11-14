@@ -56,9 +56,9 @@ export const createMockChannel = (
 	activeSurveyId: activeSurveyId || uuidv4(),
 })
 
-export const createMockQuestion = (categoryId: string): Question => ({
+export const createMockQuestion = (category: string): Question => ({
 	heading: faker.lorem.words(),
-	categoryId,
+	category,
 	choices: _.times(5, () => createMockChoice()),
 })
 

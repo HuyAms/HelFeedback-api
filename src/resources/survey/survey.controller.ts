@@ -20,7 +20,10 @@ export const getSurveys: RequestHandler = (req, res, next) => {
 }
 
 export const getSurvey: RequestHandler = (req, res, next) => {
-	return res.json(successResponse(req.survey))
+	return services
+		.getSurvey(req.params.id)
+		.then(surveys => res.json(successResponse(surveys)))
+		.catch(next)
 }
 
 export const createSurvey: RequestHandler = (req, res, next) => {

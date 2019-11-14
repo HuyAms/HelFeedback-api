@@ -20,7 +20,7 @@ const surveySchema = new mongoose.Schema(
 					required: true,
 				},
 				subtitle: String,
-				categoryId: {
+				category: {
 					type: mongoose.Schema.Types.ObjectId,
 					ref: 'category',
 				},
