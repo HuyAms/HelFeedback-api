@@ -1,5 +1,5 @@
 export interface Feedback {
-	channeldId: string
+	channelId: string
 	surveyId: string
 	questionId: string
 	value: string
