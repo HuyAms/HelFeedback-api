@@ -27,6 +27,7 @@ const surveySchema = new mongoose.Schema(
 					{
 						value: String,
 						imageUrl: String,
+						showOnMobile: Boolean,
 					},
 				],
 			},
