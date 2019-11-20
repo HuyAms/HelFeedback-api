@@ -22,7 +22,7 @@ export const getSurveys: RequestHandler = (req, res, next) => {
 export const getSurvey: RequestHandler = (req, res, next) => {
 	return services
 		.getSurvey(req.params.id)
-		.then(surveys => res.json(successResponse(surveys)))
+		.then(survey => res.json(successResponse(survey)))
 		.catch(next)
 }
 

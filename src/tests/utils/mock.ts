@@ -63,7 +63,6 @@ export const createMockQuestion = (category: string): Question => ({
 })
 
 export const createMockChoice = (): Choice => ({
-	id: uuidv4(),
 	value: faker.lorem.word(),
 	imageUrl:
 		'https://user-images.githubusercontent.com/17778976/68158409-3a30ea80-ff58-11e9-9c2e-165b093cbbb7.png',
