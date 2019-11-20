@@ -6,7 +6,7 @@ export interface Question {
 }
 
 export interface Choice {
-	id: string
 	value: string
 	imageUrl?: string
+	showOnMobile: boolean
 }

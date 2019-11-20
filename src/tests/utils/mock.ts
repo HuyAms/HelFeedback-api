@@ -59,11 +59,14 @@ export const createMockChannel = (
 export const createMockQuestion = (category: string): Question => ({
 	heading: faker.lorem.words(),
 	category,
-	choices: _.times(5, () => createMockChoice()),
+	choices: [
+		..._.times(2, () => createMockChoice(false)),
+		..._.times(3, () => createMockChoice(true)),
+	],
 })
 
-export const createMockChoice = (): Choice => ({
-	id: uuidv4(),
+export const createMockChoice = (showOnMobile: boolean): Choice => ({
+	showOnMobile,
 	value: faker.lorem.word(),
 	imageUrl:
 		'https://user-images.githubusercontent.com/17778976/68158409-3a30ea80-ff58-11e9-9c2e-165b093cbbb7.png',
