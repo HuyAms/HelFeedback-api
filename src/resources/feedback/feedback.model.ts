@@ -18,6 +18,10 @@ const feedbackSchema = new mongoose.Schema(
 			ref: 'question',
 		},
 		value: String,
+		userGroup: {
+			type: String,
+			enum: ['adult', 'child'],
+		},
 	},
 	{timestamps: true},
 )
