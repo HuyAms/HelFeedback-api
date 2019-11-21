@@ -8,5 +8,5 @@ export interface Question {
 export interface Choice {
 	value: string
 	imageUrl?: string
-	forChild: boolean
+	isForChildren: boolean
 }
