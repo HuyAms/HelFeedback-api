@@ -28,7 +28,11 @@ export const getSurveys = (name: string): Promise<SurveyDocument[]> => {
 }
 
 export const getSurvey = (id: string): Promise<SurveyDocument> => {
-	const survey = SurveyModel.findById(id).exec()
+	const survey = SurveyModel.findById(id)
+		.populate({
+			path: 'questions.category',
+		})
+		.exec()
 
 	if (!survey) {
 		throw notFound('Cannot find survey with that id')
