@@ -4,18 +4,8 @@
 		"category": "Sisäilma",
 		"choices": [
 			{
-				"value": "Tunkkainen",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
-				"isForChildren": "true"
-			},
-			{
-				"value": "Melko tunkkainen",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
-				"isForChildren": "false"
-			},
-			{
-				"value": "Ei raikas eikä tunkkainen",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+				"value": "Raikas",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
 				"isForChildren": "true"
 			},
 			{
@@ -24,8 +14,19 @@
 				"isForChildren": "false"
 			},
 			{
-				"value": "Raikas",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
+				"value": "Ei raikas eikä tunkkainen",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Melko tunkkainen",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
+				"isForChildren": "false"
+			},
+
+			{
+				"value": "Tunkkainen",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
 				"isForChildren": "true"
 			}
 		]
@@ -35,18 +36,8 @@
 		"category": "Sisäilma",
 		"choices": [
 			{
-				"value": "Paljon pölyisyyttä",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
-				"isForChildren": "true"
-			},
-			{
-				"value": "Huomattavasti pölyisyyttä",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
-				"isForChildren": "false"
-			},
-			{
-				"value": "Jonkin verran pölyisyyttä",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+				"value": "Ei pölyisyyttä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
 				"isForChildren": "true"
 			},
 			{
@@ -55,8 +46,18 @@
 				"isForChildren": "false"
 			},
 			{
-				"value": "Ei pölyisyyttä",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
+				"value": "Jonkin verran pölyisyyttä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Huomattavasti pölyisyyttä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
+				"isForChildren": "false"
+			},
+			{
+				"value": "Paljon pölyisyyttä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
 				"isForChildren": "true"
 			}
 		]

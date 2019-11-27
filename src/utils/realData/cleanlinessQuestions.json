@@ -4,18 +4,8 @@
 		"category": "Siisteys",
 		"choices": [
 			{
-				"value": "Voimakas haju",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
-				"isForChildren": "true"
-			},
-			{
-				"value": "Huomattava haju",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
-				"isForChildren": "false"
-			},
-			{
-				"value": "Jonkin verran hajua",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+				"value": "Ei hajua",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
 				"isForChildren": "true"
 			},
 			{
@@ -24,8 +14,19 @@
 				"isForChildren": "false"
 			},
 			{
-				"value": "Ei hajua",
-				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
+				"value": "Jonkin verran hajua",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Huomattava haju",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
+				"isForChildren": "false"
+			},
+
+			{
+				"value": "Voimakas haju",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
 				"isForChildren": "true"
 			}
 		]
