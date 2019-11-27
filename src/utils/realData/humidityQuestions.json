@@ -1,0 +1,29 @@
+[{
+  "heading": "Minkälaiseksi koet sisäilman kosteuden?",
+  "category": "Kosteus",
+  "choices": [{
+    "value": "Kuiva",
+    "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
+    "isForChildren": "true"
+  },
+    {
+      "value": "Melko Kuiva",
+      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+      "isForChildren": "false"
+    },
+    {
+      "value": "Ei kuiva eikä kostea",
+      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
+      "isForChildren": "true"
+    },
+    {
+      "value": "Melko kostea",
+      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+      "isForChildren": "false"
+    },
+    {
+      "value": "Kostea",
+      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
+      "isForChildren": "true"
+    }]
+}]

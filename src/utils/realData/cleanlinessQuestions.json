@@ -1,0 +1,29 @@
+[{
+  "heading": "Minkälaiseksi koet sisäilman hajun?",
+  "category": "Siisteys",
+  "choices": [{
+    "value": "Voimakas haju",
+    "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
+    "isForChildren": "true"
+  },
+    {
+      "value": "Huomattava haju",
+      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
+      "isForChildren": "false"
+    },
+    {
+      "value": "Jonkin verran hajua",
+      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+      "isForChildren": "true"
+    },
+    {
+      "value": "Vähän hajua",
+      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
+      "isForChildren": "false"
+    },
+    {
+      "value": "Ei hajua",
+      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
+      "isForChildren": "true"
+    }]
+}]
