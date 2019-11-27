@@ -2,16 +2,15 @@ import {User, UserRole, UserStatus} from '../resources/user/user.interface'
 import _ from 'lodash'
 import UserModel from '../resources/user/user.model'
 import createLogger from '../utils/logger'
-import {
-	createMockCategory,
-	createMockChannel,
-	createMockQuestion,
-	createMockSurvey,
-} from '../tests/utils/mock'
+import {createMockChannel, createMockSurvey} from '../tests/utils/mock'
 import {addCategory, addChannel, addSurvey} from '../tests/utils/db'
 import ChannelModel from '../resources/channel/channel.model'
 import CategoryModel from '../resources/category/category.model'
 import SurveyModel from '../resources/survey/survey.model'
+import {
+	getCategories,
+	getQuestionsGroupByCategory,
+} from './realData/readDataUtils'
 
 const logger = createLogger(module)
 
@@ -59,15 +58,25 @@ const createChannels = (surveyId: string) => {
 }
 
 const createCategories = () => {
-	const mockCategories = _.times(6, () => createMockCategory())
+	const mockCategories = getCategories()
 
 	return mockCategories.map(mockCategories => addCategory(mockCategories))
 }
 
 const createSurveys = (categoryIds: string[]) => {
-	const questions = categoryIds.map(categoryId =>
-		createMockQuestion(categoryId),
+	const questionsGroupByCategory = getQuestionsGroupByCategory()
+
+	const questionsGroupByCategoryWithId = categoryIds
+		.map((categoryId, index) => {
+			const questions = questionsGroupByCategory[index]
+			return questions.map(question => ({
+				...question,
+				category: categoryId,
+			}))
+		},
 	)
+
+	const questions = [].concat.apply([], questionsGroupByCategoryWithId)
 
 	const mockSurvey = createMockSurvey(questions)
 

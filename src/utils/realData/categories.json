@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Lämpötila",
+		"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/temperature.png",
+		"instruction": {
+			"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/temperature.png",
+			"text": "Lämpötila on fysiikassa ja kemiassa käytettävä perussuure, joka ilmaisee kohteen termodynaamisen lämpötilan eli absoluuttisen lämpötilan. Arkikielessä lämpötila kertoo, kuinka lämmin kohde on. Lämpötila ilmoitetaan käyttäen lämpötila-asteikkoja, joista kolme yleisintä ovat celsius, fahrenheit ja kelvin"
+		}
+	},
+	{
+		"name": "Äänet",
+		"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/sounds.png",
+		"instruction": {
+			"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/sounds.png",
+			"text": "Ääni on kuultavissa olevaa mekaanista aaltoliikettä tai mainitun aaltoliikkeen kuuloelinten kautta aiheuttama kuuloaistimus tajunnassa. Ääniaalto ei etene tyhjiössä vaan tarvitsee väliaineen edetäkseen. Väliaine voi olla missä tahansa olomuodossa, kuten nesteenä, kaasuna, kiinteänä tai plasmana. Kun väliaineena on kaasu (esimerkiksi ilma) ääniaalto etenee pitkittäisenä. Kiinteissä aineissa esiintyy myös poikittaisia ääniaaltoja. Tieteellistä äänentutkimusta kutsutaan akustiikaksi."
+		}
+	},
+	{
+		"name": "Valaistus",
+		"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/light.png",
+		"instruction": {
+			"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/light.png",
+			"text": "Valaistus käsittää keinotekoiset valonlähteet kuten lamput, ledit ja sisätiloihin tulevan päivänvalon. Päivänvaloa käytetään usein pääasiallisena valonlähteenä päivisin."
+		}
+	},
+	{
+		"name": "Sisäilma",
+		"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/air.png",
+		"instruction": {
+			"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/air.png",
+			"text": "Sisäilma on rakennuksen tai muun tilan sisällä olevaa ilmaa. Sisäilma koostuu kaasumaista ja hiukkasmaisista yhdisteistä, jotka liikkuvat ilman mukana ja päätyvät hengityksen, ihon tai limakalvojen kautta elimistöön. Ulkoilman lisäksi sisäilmassa on tilasta, sen käyttäjistä tai käyttäjien toiminnoista peräisin olevia yhdisteitä."
+		}
+	},
+	{
+		"name": "Kosteus",
+		"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/humidity.png",
+		"instruction": {
+			"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/humidity.png",
+			"text": "Kosteus ilmaisee veden tai vesihöyryn määrää toisessa aineessa. Kosteus voidaan ilmaista useilla eri tavoilla absoluuttisena tai suhteellisena kosteutena. Ilmankosteus on merkittävin kosteussuure, mutta myös monilla muilla kosteuksilla, kuten rakennusmateriaalien ja polttoaineiden, on merkitystä."
+		}
+	},
+	{
+		"name": "Siisteys",
+		"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/cleanliness.png",
+		"instruction": {
+			"imageUrl": "http://users.metropolia.fi/~anniluo/assets/category/cleanliness.png",
+			"text": "Siivoaminen tai siivous on jonkin paikan puhdistamista tai siistimistä roskista, pölystä tai liasta. Perussiivouksessa, joka tehdään harvoin, palautetaan paikan siisteys, kun taas usein toistuvalla ylläpitosiivouksella säilytetään siisteys."
+		}
+	}
+]
