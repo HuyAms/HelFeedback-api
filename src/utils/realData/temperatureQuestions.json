@@ -1,32 +1,33 @@
 [
-  {
-    "heading": "Minkälaiseksi koet opetustilan lämpötilan?",
-    "category": "Lämpötila",
-    "choices": [
-      {
-        "value": "Kuuma",
-        "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
-        "isForChildren": "true"
-      },
-      {
-        "value": "Lämmin",
-        "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
-        "isForChildren": "false"
-      },
-      {
-        "value": "Sopiva",
-        "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
-        "isForChildren": "true"
-      },
-      {
-        "value": "Viileä",
-        "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
-        "isForChildren": "false"
-      },
-      {
-        "value": "Kylmä",
-        "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
-        "isForChildren": "true"
-      }
-    ]
-  }]
+	{
+		"heading": "Minkälaiseksi koet opetustilan lämpötilan?",
+		"category": "Lämpötila",
+		"choices": [
+			{
+				"value": "Kuuma",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Lämmin",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+				"isForChildren": "false"
+			},
+			{
+				"value": "Sopiva",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Viileä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
+				"isForChildren": "false"
+			},
+			{
+				"value": "Kylmä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
+				"isForChildren": "true"
+			}
+		]
+	}
+]

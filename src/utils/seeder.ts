@@ -66,8 +66,8 @@ const createCategories = () => {
 const createSurveys = (categoryIds: string[]) => {
 	const questionsGroupByCategory = getQuestionsGroupByCategory()
 
-	const questionsGroupByCategoryWithId = categoryIds
-		.map((categoryId, index) => {
+	const questionsGroupByCategoryWithId = categoryIds.map(
+		(categoryId, index) => {
 			const questions = questionsGroupByCategory[index]
 			return questions.map(question => ({
 				...question,

@@ -1,57 +1,64 @@
-[{
-  "heading": "Minkälaiseksi koet sisäilman raikkauden?",
-  "category": "Sisäilma",
-  "choices": [{
-    "value": "Tunkkainen",
-    "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
-    "isForChildren": "true"
-  },
-    {
-      "value": "Melko tunkkainen",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
-      "isForChildren": "false"
-    },
-    {
-      "value": "Ei raikas eikä tunkkainen",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
-      "isForChildren": "true"
-    },
-    {
-      "value": "Melko raikas",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
-      "isForChildren": "false"
-    },
-    {
-      "value": "Raikas",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
-      "isForChildren": "true"
-    }]
-},{
-  "heading": "Minkälaiseksi koet sisäilman puhtauden?",
-  "category": "Sisäilma",
-  "choices": [{
-    "value": "Paljon hiukkasia/pölyisyyttä",
-    "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
-    "isForChildren": "true"
-  },
-    {
-      "value": "Huomattavasti hiukkasia/pölyisyyttä",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
-      "isForChildren": "false"
-    },
-    {
-      "value": "Jonkin verran hiukkasia/pölyisyyttä",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
-      "isForChildren": "true"
-    },
-    {
-      "value": "Vähän hiukkasia/pölyisyyttä",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
-      "isForChildren": "false"
-    },
-    {
-      "value": "Ei hiukkasia/pölyisyyttä",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
-      "isForChildren": "true"
-    }]
-}]
+[
+	{
+		"heading": "Minkälaiseksi koet sisäilman raikkauden?",
+		"category": "Sisäilma",
+		"choices": [
+			{
+				"value": "Tunkkainen",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Melko tunkkainen",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
+				"isForChildren": "false"
+			},
+			{
+				"value": "Ei raikas eikä tunkkainen",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Melko raikas",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
+				"isForChildren": "false"
+			},
+			{
+				"value": "Raikas",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
+				"isForChildren": "true"
+			}
+		]
+	},
+	{
+		"heading": "Minkälaiseksi koet sisäilman puhtauden?",
+		"category": "Sisäilma",
+		"choices": [
+			{
+				"value": "Paljon hiukkasia/pölyisyyttä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Huomattavasti hiukkasia/pölyisyyttä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
+				"isForChildren": "false"
+			},
+			{
+				"value": "Jonkin verran hiukkasia/pölyisyyttä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Vähän hiukkasia/pölyisyyttä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
+				"isForChildren": "false"
+			},
+			{
+				"value": "Ei hiukkasia/pölyisyyttä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
+				"isForChildren": "true"
+			}
+		]
+	}
+]

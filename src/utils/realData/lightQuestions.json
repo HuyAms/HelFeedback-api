@@ -1,29 +1,33 @@
-[{
-  "heading": "Minkälainen on huoneen valaistus?",
-  "category": "Valaistus",
-  "choices": [{
-    "value": "Hyvä",
-    "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
-    "isForChildren": "true"
-  },
-    {
-      "value": "Melko hyvä",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
-      "isForChildren": "false"
-    },
-    {
-      "value": "Ei hyvä eikä huono",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
-      "isForChildren": "true"
-    },
-    {
-      "value": "Melko huono",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
-      "isForChildren": "false"
-    },
-    {
-      "value": "Huono",
-      "imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
-      "isForChildren": "true"
-    }]
-}]
+[
+	{
+		"heading": "Minkälainen on huoneen valaistus?",
+		"category": "Valaistus",
+		"choices": [
+			{
+				"value": "Hyvä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Melko hyvä",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
+				"isForChildren": "false"
+			},
+			{
+				"value": "Ei hyvä eikä huono",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
+				"isForChildren": "true"
+			},
+			{
+				"value": "Melko huono",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
+				"isForChildren": "false"
+			},
+			{
+				"value": "Huono",
+				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
+				"isForChildren": "true"
+			}
+		]
+	}
+]
