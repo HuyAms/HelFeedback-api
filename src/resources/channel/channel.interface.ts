@@ -1,5 +1,5 @@
 export interface Channel {
 	name: string
-	lastFeedback: Date
+	lastFeedback?: Date
 	activeSurveyId: string
 }

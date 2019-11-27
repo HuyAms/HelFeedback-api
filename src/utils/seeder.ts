@@ -1,5 +1,4 @@
 import {User, UserRole, UserStatus} from '../resources/user/user.interface'
-import _ from 'lodash'
 import UserModel from '../resources/user/user.model'
 import createLogger from '../utils/logger'
 import {createMockChannel, createMockSurvey} from '../tests/utils/mock'
@@ -52,7 +51,10 @@ const createUsers = () => {
 }
 
 const createChannels = (surveyId: string) => {
-	const mockChannels = _.times(4, () => createMockChannel(surveyId))
+	const channel1 = createMockChannel('MMA103', surveyId)
+	const channel2 = createMockChannel('MMB301', surveyId)
+
+	const mockChannels = [channel1, channel2]
 
 	return mockChannels.map(mockChannel => addChannel(mockChannel))
 }
