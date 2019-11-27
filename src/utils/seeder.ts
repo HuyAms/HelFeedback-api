@@ -3,7 +3,6 @@ import _ from 'lodash'
 import UserModel from '../resources/user/user.model'
 import createLogger from '../utils/logger'
 import {
-	createMockCategory,
 	createMockChannel,
 	createMockQuestion,
 	createMockSurvey,
@@ -12,6 +11,7 @@ import {addCategory, addChannel, addSurvey} from '../tests/utils/db'
 import ChannelModel from '../resources/channel/channel.model'
 import CategoryModel from '../resources/category/category.model'
 import SurveyModel from '../resources/survey/survey.model'
+import {getCategories} from './realData/readDataUtils'
 
 const logger = createLogger(module)
 
@@ -59,7 +59,7 @@ const createChannels = (surveyId: string) => {
 }
 
 const createCategories = () => {
-	const mockCategories = _.times(6, () => createMockCategory())
+	const mockCategories = getCategories()
 
 	return mockCategories.map(mockCategories => addCategory(mockCategories))
 }
