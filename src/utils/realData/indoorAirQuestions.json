@@ -35,27 +35,27 @@
 		"category": "Sisäilma",
 		"choices": [
 			{
-				"value": "Paljon hiukkasia/pölyisyyttä",
+				"value": "Paljon pölyisyyttä",
 				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/terrible.png",
 				"isForChildren": "true"
 			},
 			{
-				"value": "Huomattavasti hiukkasia/pölyisyyttä",
+				"value": "Huomattavasti pölyisyyttä",
 				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/bad.png",
 				"isForChildren": "false"
 			},
 			{
-				"value": "Jonkin verran hiukkasia/pölyisyyttä",
+				"value": "Jonkin verran pölyisyyttä",
 				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/normal.png",
 				"isForChildren": "true"
 			},
 			{
-				"value": "Vähän hiukkasia/pölyisyyttä",
+				"value": "Vähän pölyisyyttä",
 				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/happy.png",
 				"isForChildren": "false"
 			},
 			{
-				"value": "Ei hiukkasia/pölyisyyttä",
+				"value": "Ei pölyisyyttä",
 				"imageUrl": "http://users.metropolia.fi/~anniluo/assets/faces/awesome.png",
 				"isForChildren": "true"
 			}
