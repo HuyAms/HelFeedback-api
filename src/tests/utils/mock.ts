@@ -41,19 +41,18 @@ export const createMockCategory = (name?: string): Category => ({
 	},
 })
 
+export const createMockChannel = (
+	name?: string,
+	activeSurveyId?: string,
+): Channel => ({
+	name: name || faker.lorem.word(),
+	activeSurveyId: activeSurveyId || uuidv4(),
+})
+
 export const createMockSurvey = (questions: Question[]): Survey => ({
 	name: faker.lorem.word(),
 	description: faker.lorem.words(),
 	questions,
-})
-
-export const createMockChannel = (
-	activeSurveyId?: string,
-	name?: string,
-): Channel => ({
-	name: name || faker.lorem.word(),
-	lastFeedback: new Date(),
-	activeSurveyId: activeSurveyId || uuidv4(),
 })
 
 export const createMockQuestion = (category: string): Question => ({
