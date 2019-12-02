@@ -2,6 +2,7 @@ import createLogger from '../../utils/logger'
 import ChannelModel, {ChannelDocument} from './channel.model'
 import {Channel} from './channel.interface'
 import {notFound} from '../../utils/apiError'
+import FeedbackModel, {FeedbackDocument} from '../feedback/feedback.model'
 
 const logger = createLogger(module)
 
@@ -17,9 +18,28 @@ export const parseChannelNameParam = async (
 	return channel
 }
 
+export const parseChannelIdParam = async (
+	id: string,
+): Promise<ChannelDocument> => {
+	const channel = await ChannelModel.findById(id).exec()
+
+	if (!channel) {
+		throw notFound('Cannot find channel with that id')
+	}
+
+	return channel
+}
+
 export const getChannels = (): Promise<ChannelDocument[]> => {
 	logger.debug('Get channels')
 	return ChannelModel.find().exec()
+}
+
+export const getChannelFeedback = (
+	channelId?: string,
+): Promise<FeedbackDocument[]> => {
+	logger.debug('Get feedback with channelId: ', channelId)
+	return FeedbackModel.find({channelId}).exec()
 }
 
 export const deleteChannel = (id: string): Promise<ChannelDocument> => {

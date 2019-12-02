@@ -17,6 +17,21 @@ export const parseChannelNameParam: RequestParamHandler = (
 		.catch(next)
 }
 
+export const parseChannelIdParam: RequestParamHandler = (
+	req,
+	res,
+	next,
+	id,
+) => {
+	services
+		.parseChannelIdParam(id)
+		.then(channel => {
+			req.channel = channel
+			return next()
+		})
+		.catch(next)
+}
+
 export const getChannels: RequestHandler = (req, res, next) => {
 	services
 		.getChannels()
@@ -26,6 +41,12 @@ export const getChannels: RequestHandler = (req, res, next) => {
 
 export const getChannel: RequestHandler = (req, res, next) => {
 	return res.json(successResponse(req.channel))
+}
+
+export const getChannelFeedback: RequestHandler = (req, res, next) => {
+	return services
+		.getChannelFeedback(req.channel._id)
+		.then(feedback => res.json(successResponse(feedback)))
 }
 
 export const createChannel: RequestHandler = (req, res, next) => {

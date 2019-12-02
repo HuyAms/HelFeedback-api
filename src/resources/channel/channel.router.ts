@@ -8,6 +8,7 @@ const router = Router()
 const channelWrite = protect([Permission.ChannelWrite])
 
 router.param('name', controller.parseChannelNameParam)
+router.param('id', controller.parseChannelIdParam)
 
 router
 	.route('/')
@@ -20,4 +21,5 @@ router
 	.put(channelWrite, validateUpdateChannel, controller.updateChannel)
 	.delete(channelWrite, controller.deleteChannel)
 
+router.route('/:id/feedback').get(controller.getChannelFeedback)
 export default router
