@@ -13,12 +13,17 @@ export enum Permission {
 	ChannelWrite = 'channel:write',
 	SurveyWrite = 'survey:write',
 	CategoryWrite = 'category:write',
+	StatisticRead = 'statistic:read',
 }
 
 type PermissionRole = {[key in UserRole]: Permission[]}
 
 export const permissionRole: PermissionRole = {
-	[UserRole.Admin]: [Permission.UserRead, Permission.UserWrite],
+	[UserRole.Admin]: [
+		Permission.UserRead,
+		Permission.UserWrite,
+		Permission.StatisticRead,
+	],
 	[UserRole.User]: [Permission.UserRead],
 }
 

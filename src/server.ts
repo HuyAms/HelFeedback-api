@@ -17,6 +17,7 @@ import channelRouter from './resources/channel/channel.router'
 import categoryRouter from './resources/category/category.router'
 import surveyRouter from './resources/survey/survey.router'
 import feedbackRouter from './resources/feedback/feedback.router'
+import statisticRouter from './resources/statistic/statistic.router'
 
 export const app = express()
 
@@ -57,6 +58,7 @@ app.use('/api/channels', channelRouter)
 app.use('/api/categories', categoryRouter)
 app.use('/api/surveys', surveyRouter)
 app.use('/api/feedbacks', feedbackRouter)
+app.use('/api/statistic', statisticRouter)
 
 app.use('/api-docs', swagger)
 
