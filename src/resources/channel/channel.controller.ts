@@ -45,7 +45,7 @@ export const getChannel: RequestHandler = (req, res, next) => {
 
 export const getChannelFeedback: RequestHandler = (req, res, next) => {
 	return services
-		.getChannelFeedback(req.channel._id)
+		.getChannelFeedback(req.channel._id, req.query.type)
 		.then(feedback => res.json(successResponse(feedback)))
 }
 

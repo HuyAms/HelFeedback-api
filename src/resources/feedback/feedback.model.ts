@@ -28,6 +28,11 @@ const feedbackSchema = new mongoose.Schema(
 			enum: ['adult', 'child'],
 			require: true,
 		},
+		type: {
+			type: String,
+			enum: ['choice', 'text'],
+			require: true,
+		},
 	},
 	{timestamps: true},
 )

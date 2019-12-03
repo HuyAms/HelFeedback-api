@@ -3,6 +3,7 @@ import ChannelModel, {ChannelDocument} from './channel.model'
 import {Channel} from './channel.interface'
 import {notFound} from '../../utils/apiError'
 import FeedbackModel, {FeedbackDocument} from '../feedback/feedback.model'
+import {FeedbackType} from '../feedback/feedback.interface'
 
 const logger = createLogger(module)
 
@@ -36,10 +37,11 @@ export const getChannels = (): Promise<ChannelDocument[]> => {
 }
 
 export const getChannelFeedback = (
-	channelId?: string,
+	channelId: string,
+	type: FeedbackType,
 ): Promise<FeedbackDocument[]> => {
 	logger.debug('Get feedback with channelId: ', channelId)
-	return FeedbackModel.find({channelId}).exec()
+	return FeedbackModel.find({channelId, type}).exec()
 }
 
 export const deleteChannel = (id: string): Promise<ChannelDocument> => {
